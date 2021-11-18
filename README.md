@@ -4,8 +4,7 @@ Maven Run a Main class Demo
 Run a main class by maven.
 
 ```
-mvn clean compile
-mvn exec:java -Dexec.mainClass="demo.Hello"
+mvn clean compile exec:java -Dexec.mainClass="demo.Hello"
 ```
 
 Sometimes you also need to add `-Dexec.cleanupDaemonThreads=false` to fix some thread warnings: <http://stackoverflow.com/questions/29878937>
